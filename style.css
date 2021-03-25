@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(196, 196, 243);
+}
+
+.div {
+  border: 1px;
+  padding: 5px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  top: 200px;
+  bottom: 200px;
+  width: 250px;
+}
+
+.border {
+  border: 1px;
+  background-color: lavenderblush;
+  height: 800px;
+}
+
+#diameter-input {
+  border-radius: 15px;
+}
+
+#button-1 {
+  border-radius: 15px;
+}
+
+#text {
+  border: 1px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 200px;
+  bottom: 200px;
+  width: 470px;
+}
+
+#header {
+  border: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 200px;
+  bottom: 200px;
+  width: 250px;
+}
