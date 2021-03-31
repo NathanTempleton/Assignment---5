@@ -3,7 +3,6 @@ let area = 0
 let circumference = 0
 let answer = 0
 
-while player-choice
 document.getElementById('button').addEventListener('click', setup)
 document.getElementById('button-2').addEventListener('click', math)
 
@@ -34,11 +33,7 @@ function math () {
     area = parseInt(area)
     answer = area
     document.getElementById('result').innerHTML = 'Your answer is :' + answer
-    document.getElementById('text').innerHTML = 'Would you like to calculate the area or circumference of the circle?'
-    document.getElementById('player-choice').style.display = 'inline'
-    document.getElementById('player-diameter').style.display = 'none'
-    document.getElementById('button').style.display = 'inline'
-    document.getElementById('button-2').style.display = 'none'
+    reset()
   } else if (playerChoice.toLowerCase() === 'circumference') {
     playerChoice = document.getElementById('player-diameter').value
     diameter = playerChoice
@@ -46,17 +41,17 @@ function math () {
     circumference = parseInt(circumference)
     answer = circumference
     document.getElementById('result').innerHTML = 'Your answer is :' + answer
-    document.getElementById('text').innerHTML = 'Would you like to calculate the area or circumference of the circle?'
-    document.getElementById('player-choice').style.display = 'inline'
-    document.getElementById('player-diameter').style.display = 'none'
-    document.getElementById('button').style.display = 'inline'
-    document.getElementById('button-2').style.display = 'none'
+    reset()
   } else {
     document.getElementById('result').innerHTML = 'Error'
-    document.getElementById('text').innerHTML = 'Would you like to calculate the area or circumference of the circle?'
+    reset()
+}
+}
+
+function reset () {
+  document.getElementById('text').innerHTML = 'Would you like to calculate the area or circumference of the circle?'
     document.getElementById('player-choice').style.display = 'inline'
     document.getElementById('player-diameter').style.display = 'none'
     document.getElementById('button').style.display = 'inline'
     document.getElementById('button-2').style.display = 'none'
-}
 }
