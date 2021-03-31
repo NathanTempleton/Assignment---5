@@ -7,7 +7,7 @@ document.getElementById('button').addEventListener('click', setup)
 document.getElementById('button-2').addEventListener('click', math)
 
 function setup () {
-  let playerChoice = document.getElementById('player-choice').value
+  const playerChoice = document.getElementById('player-choice').value
   if (playerChoice.toLowerCase() === 'area') {
     transition()
   } else if (playerChoice.toLowerCase() === 'circumference') {
@@ -50,8 +50,8 @@ function transition () {
 
 function reset () {
   document.getElementById('text').innerHTML = 'Would you like to calculate the area or circumference of the circle?'
-    document.getElementById('player-choice').style.display = 'inline'
-    document.getElementById('player-diameter').style.display = 'none'
-    document.getElementById('button').style.display = 'inline'
-    document.getElementById('button-2').style.display = 'none'
+  document.getElementById('player-choice').style.display = 'inline'
+  document.getElementById('player-diameter').style.display = 'none'
+  document.getElementById('button').style.display = 'inline'
+  document.getElementById('button-2').style.display = 'none'
 }
