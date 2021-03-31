@@ -13,18 +13,39 @@ body {
   width: 250px;
 }
 
+.img {
+  display: block;
+  margin: auto;
+  width: 35%;
+  height: 25%;
+}
+
 .border {
   border: 1px;
   background-color: lavenderblush;
   height: 800px;
 }
 
-#diameter-input {
+#player-choice {
   border-radius: 15px;
 }
 
-#button-1 {
+#player-diameter {
   border-radius: 15px;
+  display: none;
+}
+
+#button {
+  border-radius: 15px;
+}
+
+#button-2 {
+  border-radius: 15px;
+  display: none;
+}
+
+#result {
+  text-align: center;
 }
 
 #text {
