@@ -17,7 +17,7 @@ function setup () {
   }
 }
 
-function math () {
+function math (playerChoice) {
   if (playerChoice.toLowerCase() === 'area') {
     playerChoice = document.getElementById('player-diameter').value
     diameter = playerChoice
@@ -37,7 +37,7 @@ function math () {
   } else {
     document.getElementById('result').innerHTML = 'Error'
     reset()
-}
+  }
 }
 
 function transition () {
