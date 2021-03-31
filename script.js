@@ -7,7 +7,7 @@ document.getElementById('button').addEventListener('click', setup)
 document.getElementById('button-2').addEventListener('click', math)
 
 function setup () {
-  let = playerChoice = document.getElementById('player-choice').value
+  let playerChoice = document.getElementById('player-choice').value
   if (playerChoice.toLowerCase() === 'area') {
     document.getElementById('text').innerHTML = 'Now enter your diameter.'
     document.getElementById('player-choice').style.display = 'none'
