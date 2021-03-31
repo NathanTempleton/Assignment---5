@@ -9,17 +9,9 @@ document.getElementById('button-2').addEventListener('click', math)
 function setup () {
   let playerChoice = document.getElementById('player-choice').value
   if (playerChoice.toLowerCase() === 'area') {
-    document.getElementById('text').innerHTML = 'Now enter your diameter.'
-    document.getElementById('player-choice').style.display = 'none'
-    document.getElementById('player-diameter').style.display = 'inline'
-    document.getElementById('button').style.display = 'none'
-    document.getElementById('button-2').style.display = 'inline'
+    transition()
   } else if (playerChoice.toLowerCase() === 'circumference') {
-    document.getElementById('text').innerHTML = 'Now enter your diameter.'
-    document.getElementById('player-choice').style.display = 'none'
-    document.getElementById('player-diameter').style.display = 'inline'
-    document.getElementById('button').style.display = 'none'
-    document.getElementById('button-2').style.display = 'inline'
+    transition()
   } else {
     document.getElementById('result').innerHTML = 'Error'
   }
@@ -46,6 +38,14 @@ function math () {
     document.getElementById('result').innerHTML = 'Error'
     reset()
 }
+}
+
+function transition () {
+  document.getElementById('text').innerHTML = 'Now enter your diameter.'
+  document.getElementById('player-choice').style.display = 'none'
+  document.getElementById('player-diameter').style.display = 'inline'
+  document.getElementById('button').style.display = 'none'
+  document.getElementById('button-2').style.display = 'inline'
 }
 
 function reset () {
