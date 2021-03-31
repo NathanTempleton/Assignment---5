@@ -3,6 +3,7 @@ let diameter = 0
 let area = 0
 let circumference = 0
 let answer = 0
+let playerChoice = ''
 
 // I set it so when these buttons are pushed they activate theses functions.
 document.getElementById('button').addEventListener('click', setup)
@@ -10,7 +11,7 @@ document.getElementById('button-2').addEventListener('click', math)
 
 // This is used to set up the displays and get inputs.
 function setup () {
-  const playerChoice = document.getElementById('player-choice').value
+  playerChoice = document.getElementById('player-choice').value
   if (playerChoice.toLowerCase() === 'area') {
     transition()
   } else if (playerChoice.toLowerCase() === 'circumference') {
@@ -21,7 +22,7 @@ function setup () {
 }
 
 // This will do the math with the diameter given by the player.
-function math (playerChoice) {
+function math () {
   if (playerChoice.toLowerCase() === 'area') {
     playerChoice = document.getElementById('player-diameter').value
     diameter = playerChoice
